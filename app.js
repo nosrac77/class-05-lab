@@ -98,6 +98,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+function multiplyArray(someArray) {
+  someArray = [2,3,4];
+  console.log(someArray);
+  var products = someArray[0] * someArray[1] * someArray[2];
+  var someOtherArray = [products];
+  console.log(products);
+  someOtherArray.push('The numbers ' + someArray + ' have a product of ' + products + '.');
+  console.log(someOtherArray);
+  return someOtherArray;
+}
+
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
