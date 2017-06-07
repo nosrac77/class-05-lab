@@ -10,7 +10,7 @@ function sum(number1, number2) {
   var numbersSum = number1 + number2;
   var sumsArray = [];
   sumsArray.push(numbersSum);
-  sumsArray.push('The sum of ' + number1 + ' and ' + number2 + ' is ' + numbersSum);
+  sumsArray.push('The sum of ' + number1 + ' and ' + number2 + ' is ' + numbersSum + '.');
   return sumsArray;
 }
 
@@ -31,7 +31,7 @@ function multiply(number1, number2) {
   var numbersMultiplied = number1 * number2;
   var multiplyArray = [];
   multiplyArray.push(numbersMultiplied);
-  multiplyArray.push('The product of ' + number1 + ' and ' + number2 + ' is ' + numbersMultiplied);
+  multiplyArray.push('The product of ' + number1 + ' and ' + number2 + ' is ' + numbersMultiplied + '.');
   return multiplyArray;
 }
 
@@ -48,6 +48,16 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+
+function sumAndMultiply(number1, number2, number3) {
+  var sums = number1 + number2 + number3;
+  var multiplied = number1 * number2 * number3;
+  var sumAndMultiplyArray = [];
+  sumAndMultiplyArray.push(sums, multiplied);
+  sumAndMultiplyArray.push(number1 + ' and ' + number2 + ' and ' + number3 + ' sum to ' + sums + '.');
+  sumAndMultiplyArray.push('The product of ' + number1 + ' and ' + number2 + ' and ' + number3 + ' is ' + multiplied + '.');
+  return sumAndMultiplyArray;
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
