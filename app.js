@@ -6,8 +6,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+function sum(number1, number2) {
+  var numbersSum = number1 + number2;
+  var sumsArray = [];
+  sumsArray.push(numbersSum);
+  sumsArray.push('The sum of ' + number1 + ' and ' + number2 + ' is ' + numbersSum);
+  return sumsArray;
+}
+
 // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+sum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
