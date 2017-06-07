@@ -27,8 +27,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+function multiply(number1, number2) {
+  var numbersMultiplied = number1 + number2;
+  var multiplyArray = [];
+  multiplyArray.push(numbersMultiplied);
+  multiplyArray.push('The product of ' + number1 + ' and ' + number2 + ' is ' + numbersMultiplied);
+  return multiplyArray;
+}
+
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(4,7);
+multiply(4,7);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
