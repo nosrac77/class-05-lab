@@ -28,7 +28,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 
 function multiply(number1, number2) {
-  var numbersMultiplied = number1 + number2;
+  var numbersMultiplied = number1 * number2;
   var multiplyArray = [];
   multiplyArray.push(numbersMultiplied);
   multiplyArray.push('The product of ' + number1 + ' and ' + number2 + ' is ' + numbersMultiplied);
